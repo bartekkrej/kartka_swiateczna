@@ -158,26 +158,32 @@
 
   lewo.addEventListener("mousedown", function(){
     keys.left = true;
+    stopEngineSound();
   });
 
   lewo.addEventListener("mouseup", function(){
     keys.left = false;
+    playEngineSoundMain();
   })
 
   prawo.addEventListener("mousedown", function(){
     keys.right = true;
+    stopEngineSound();
   })
 
   prawo.addEventListener("mouseup", function(){
     keys.right = false;
+    playEngineSoundMain();
   })
 
   strzał.addEventListener("mousedown", function(){
     keys.space = true;
+    stopEngineSound();
   })
 
   strzał.addEventListener("mouseup", function(){
     keys.space = false;
+    playEngineSoundMain();
   })
 
   window.onload = function () {
